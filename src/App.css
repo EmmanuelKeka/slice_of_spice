@@ -1,0 +1,136 @@
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: 'NightVibes';
+  src: url('../public/fonts/NightVibes.ttf') format('truetype');
+}
+
+.hero--section {
+  background-image: url("../public/chef.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  pointer-events: none;
+}
+a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.pad1 {
+  clip-path: polygon(0 1%, 70% 13%, 100% 100%, 0% 100%);
+}
+
+.pad2 {
+  clip-path: polygon(0 1%, 70% 13%, 100% 100%, 0% 100%);
+}
+
+.pad3 {
+  clip-path: polygon(27% 18%, 100% 0, 100% 100%, 0 100%);
+}
+
+.pad4 {
+  clip-path: polygon(31% 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.hero--title {
+  font-family: NightVibes;
+}
+
+.liquid {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255) 100%);
+  animation: liquid 8s linear infinite alternate;
+}
+
+.liquid:hover {
+  animation-play-state: paused;
+}
+
+@keyframes liquid {
+
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+h1{
+  text-shadow:
+    2px 0px 0px #00fffc, 
+    4px 0px 0px #fffc00, 
+    3px 3px 0px #90B1E0;
+}
+
+section {
+  padding: 0% 5%;
+}
