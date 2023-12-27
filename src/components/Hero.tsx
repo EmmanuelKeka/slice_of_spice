@@ -17,10 +17,10 @@ function Hero() {
     >
       <div className="grid grid-cols-3 grid-rows-3 gap-0">
         <div className="col-span-2">
-          <h1 className=" text-9xl font-semibold ">Media</h1>
+          <h1 className=" text-9xl font-semibold text--effect">Media</h1>
         </div>
         <div className="col-span-2 col-start-1 row-start-2">
-          <h1 className=" text-9xl font-semibold ">Floating</h1>
+          <h1 className=" text-9xl font-semibold text--effect">Floating</h1>
         </div>
         <div className="col-span-2 col-start-1 row-start-3">
           <p className="font-bold pl-2">Boost your brand with Media Floats.</p>

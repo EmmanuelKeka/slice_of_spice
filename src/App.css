@@ -13,13 +13,6 @@
   src: url('../public/fonts/NightVibes.ttf') format('truetype');
 }
 
-.hero--section {
-  background-image: url("../public/chef.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 
 .cover {
   position: fixed;
@@ -32,17 +25,26 @@
   background: url(https://grainy-gradients.vercel.app/noise.svg);
   pointer-events: none;
 }
+
+.work--section {
+  background-image: url("../public/card/tv.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain
+}
+
 a {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  
+
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+
+a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -54,9 +56,10 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .pad1 {
@@ -86,6 +89,12 @@ a:hover:after {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255) 100%);
   animation: liquid 8s linear infinite alternate;
+  animation: rotate 5s linear infinite alternate;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .liquid:hover {
@@ -124,10 +133,33 @@ a:hover:after {
   }
 }
 
-h1{
+@keyframes rotate {
+  from {
+    box-shadow:
+      4px 0px 0px #00fffc,
+      8px 0px 0px #fffc00,
+      12px 3px 0px #90B1E0;
+  }
+
+  to {
+    box-shadow:
+      -4px 0px 0px #00fffc,
+      -8px 0px 0px #fffc00,
+      -12px 3px 0px #90B1E0;
+  }
+}
+
+.text--effect {
   text-shadow:
-    2px 0px 0px #00fffc, 
-    4px 0px 0px #fffc00, 
+    2px 0px 0px #00fffc,
+    4px 0px 0px #fffc00,
+    3px 3px 0px #90B1E0;
+}
+
+.box--effect {
+  box-shadow:
+    2px 0px 0px #00fffc,
+    4px 0px 0px #fffc00,
     3px 3px 0px #90B1E0;
 }
 
